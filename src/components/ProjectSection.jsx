@@ -6,14 +6,12 @@ const projects = [
         id: 1,
         title: "Blog Website",
         description: "Full Stack AI Powered Blog App using MERN Stack",
-        image: "/project1.png",
+        image: "/project1.png",  // ✅ FIXED: Remove "public/" - just use "/project1.png"
         tags: ["React", "TailwindCSS", "Supabase"],
-        demoUrl: "#",
-        githubUrl: "#",
+        demoUrl: "breachblog-client.vercel.app",  // ✅ ADD YOUR VERCEL LINK HERE
+        githubUrl: "https://github.com/Utsavpandit231/Breachblog-",  // ✅ ADD YOUR GITHUB LINK HERE
     },
 ];
-
-
 
 const ProjectSection = () => {
     return (
@@ -42,50 +40,47 @@ const ProjectSection = () => {
                             </div>
                             <div className="p-6">
                                 <div className="flex flex-wrap gap-2 mb-4">
-                                    {project.tags.map((tag) => (
-                                        <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary opacity-100 text-secondary">
+                                    {project.tags.map((tag, index) => (
+                                        <span 
+                                            key={index}  // ✅ FIXED: Added key prop
+                                            className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary opacity-100 text-secondary"
+                                        >
                                             {tag}
                                         </span>
                                     ))}
                                 </div>
-                            </div>
                             
-                            <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
 
-                            <p className="text-muted-foreground text-sm mb-4">
-                                {project.description}
-                            </p>
+                                <p className="text-muted-foreground text-sm mb-4">
+                                    {project.description}
+                                </p>
 
-                            <div className="flex justify-between items-center">
-                                <div className="flex space-x-3">
-                                    <a
-                                        href={project.demoUrl}
-                                        target='_blank'
-                                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                                    >
-                                        <ExternalLink />
-                                    </a>
+                                <div className="flex justify-between items-center">
+                                    <div className="flex space-x-3">
+                                        <a  // ✅ FIXED: Added opening <a> tag
+                                            href={project.demoUrl}
+                                            target='_blank'
+                                            rel="noopener noreferrer"  // ✅ ADDED: Security best practice
+                                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                        >
+                                            <ExternalLink />
+                                        </a>
 
-                                    <a
-                                        href={project.githubUrl}
-                                        target='_blank'
-                                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                                    >
-                                        <Github />
-                                    </a>
+                                        <a  // ✅ FIXED: Added opening <a> tag
+                                            href={project.githubUrl}
+                                            target='_blank'
+                                            rel="noopener noreferrer"  // ✅ ADDED: Security best practice
+                                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                        >
+                                            <Github />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-
-
-
-
                         </div>
                     ))}
                 </div>
-
-
-
-
             </div>
         </section>
     )
