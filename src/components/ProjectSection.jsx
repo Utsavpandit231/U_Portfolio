@@ -6,7 +6,7 @@ const projects = [
         id: 1,
         title: "Blog Website",
         description: "Full Stack AI Powered Blog App using MERN Stack",
-        image: "public/project1.png",
+        image: "/project1.png",
         tags: ["React", "TailwindCSS", "Supabase"],
         demoUrl: "#",
         githubUrl: "#",
