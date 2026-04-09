@@ -31,7 +31,7 @@ export const ContactSection = () => {
                 href="mailto:hello@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                hello@gmail.com
+                utsavpandit231@gmail.com
               </a>
             </div>
           </div>
@@ -48,7 +48,7 @@ export const ContactSection = () => {
                 href="tel:+9175850944"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                +91 75850 944XX
+                +91 8972243XXX
               </a>
             </div>
           </div>
@@ -90,7 +90,7 @@ export const ContactSection = () => {
 <div className="flex items-center justify-center gap-4">
 
   {/* LinkedIn */}
-  <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"
+  <a href="https://www.linkedin.com/in/utsav-pandit-1369061b1" target="_blank" rel="noopener noreferrer"
     className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-border text-muted-foreground hover:text-[#0077B5] transition-colors duration-200">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
