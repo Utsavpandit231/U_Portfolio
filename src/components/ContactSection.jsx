@@ -28,7 +28,7 @@ export const ContactSection = () => {
             <div className="flex flex-col">
               <h4 className="font-medium">Email</h4>
               <a
-                href="mailto:hello@gmail.com"
+                href="mailto:utsavpandit231@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 utsavpandit231@gmail.com
@@ -45,7 +45,7 @@ export const ContactSection = () => {
             <div className="flex flex-col">
               <h4 className="font-medium">Phone</h4>
               <a
-                href="tel:+9175850944"
+                href="tel:+918972243XXX"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 +91 8972243XXX
