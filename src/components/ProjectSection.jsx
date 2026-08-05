@@ -10,7 +10,15 @@ const projects = [
         tags: ["React", "TailwindCSS", "Supabase"],
         demoUrl: "breachblog-client.vercel.app",  // ✅ ADD YOUR VERCEL LINK HERE
         githubUrl: "https://github.com/Utsavpandit231/Breachblog-",  // ✅ ADD YOUR GITHUB LINK HERE
-    },
+    },{
+        id: 2,
+        title: "Craft Caffe",
+        description: "Modern café website built with React and Tailwind CSS featuring a responsive design, elegant UI, and interactive user experience.",
+        image: "/Craft_caffe.png", // Add your cafe website screenshot as project2.png in the public folder
+        tags: ["Javascript", "TailwindCSS"],
+        demoUrl: "https://craft-caffe.vercel.app",
+        githubUrl: "https://github.com/Utsavpandit231/Craft_Caffe",
+    }
 ];
 
 const ProjectSection = () => {
